@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Strona</title>
+	<link 
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+		rel="stylesheet" 
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+		crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+	<script src="elements.js" defer></script>
+	<script src="srcoll.js" defer></script>
+</head>
+<body>
+	<nav class="nav position-fixed top-0 start-0 d-block" style="z-index: 5;">
+		<nav-element icon="home" link="" title="strona główna"></nav-element>
+		<nav-element icon="komitet" link="" title="komitet naukowy"></nav-element>
+		<nav-element icon="book" link="" title="program"></nav-element>
+		<nav-element icon="knowledge" link="" title="wykładowcy"></nav-element>
+		<nav-element icon="az" link="" title="wykłady"></nav-element>
+		<nav-element icon="postery" link="" title="postery"></nav-element>
+		<nav-element icon="people" link="" title="komitet organizacyjny"></nav-element>
+		<nav-element icon="loc" link="" title="miejsce konferencji"></nav-element>
+		<nav-element icon="info" link="" title="informacje dodatkowe"></nav-element>
+		<nav-element icon="money" link="" title="ceny uczestnictwa"></nav-element>
+		<nav-element icon="masks" link="" title="program fakultatywny"></nav-element>
+		<nav-element icon="sponsors" link="" title="sponsorzy i wystawcy"></nav-element>
+		<nav-element icon="photo" link="" title="galeria"></nav-element>
+		<nav-element icon="rearrow" link="" title="archiwum"></nav-element>
+		<nav-element icon="mail" link="" title="kontakt"></nav-element>
+	</nav>
+	<main class="container-fluid p-0 overflow-hidden position-relative">
+		<button class="rej-btn btn btn-outline-ligth position-absolute border border-2 border-light text-light">Rejestracja</button>
+
+		<img src="background.png" alt="background" class="img img-fluid" style="width: 100vw;position: relative;z-index: -2;">
+
+		<div class="gap w-100"></div>
+
+		<div class="conteiner-fluid">
+			<div class="row align-items-center d-flex flex-row">
+				<div class="col-xxl-4 offset-xxl-3 col-xl-5 offset-xl-2 col-lg-5">
+					<div class="display-5 my-3 text-bonus-color text-uppercase">koleżanki i koledzy</div>
+					<div class="text-justify my-3 px-1">
+						Lorem Ipsum is simply dummy text of the printing end typesetting indus-
+						try. Lorem Ipsum has been the industry's standard dummy text ever since
+						the 1500s, when an unknown printer took a galley of type and scrambled
+						it to make a type specimen book.
+					</div>
+					<div class="text-justify my-3 px-1">
+						It has survived not only five centuries, but also leap into electonic
+						typesetting, remaining essentially unchanged. It was popularised in the
+						1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+						end more recently with desktop publishing software like Aldus PageMaker
+						including versions of Lorem Ipsum.
+					</div>
+					<div class="text-justify my-3 px-1">
+						It has survived not only five centuries, but also leap into electonic
+						typesetting, remaining essentially unchanged. It was popularised in the
+						1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+						end more recently with desktop publishing software like Aldus PageMaker 
+						including versions of Lorem Ipsum.
+					</div>
+					<div class="h3 my-3 text-bonus-color fw-light">
+						prof. dr. hab. med.<br>
+						Kierownik Kliniki Rekrutacji<br>
+						Uniwersytetu Medycznego w Poznaniu<br>
+					</div>
+				</div>
+				<div class="col-lg-7 col-xl-5">
+					<img src="osoba.png" alt="osoba" class="img-fluid d-block mx-auto">
+				</div>
+			</div>
+		</div>
+
+		<div class="gap w-100"></div>
+
+		<div class="cennik-content container-fluid py-5">
+			<div class="h5 text-center text-light mt-2 text-uppercase">cennik</div>
+			<div class="h1 text-center text-uppercase mb-4">uczestnictwa</div>
+			<div class="row g-0 px-5 my-5">
+				<div class="col-sm-4 col-md-3 col-xl-2	 offset-sm-2 offset-xl-1">
+					<custom-pakiet price="669" type="uczestnik"></custom-pakiet>
+				</div>
+				<div class="col-sm-4 col-md-3 col-xl-2">
+					<custom-pakiet price="799" type="firma"></custom-pakiet>
+				</div>
+				<div class="col-sm-4 col-md-3 col-xl-2 offset-sm-2 offset-md-0">
+					<custom-pakiet price="899" type="rezydent"></custom-pakiet>
+				</div>
+				<div class="col-sm-4 col-md-3 col-xl-2 offset-xl-0 offset-md-3">
+					<custom-pakiet price="999" type="student pielęgniarka"></custom-pakiet>
+				</div>
+				<div class="col-sm-4 col-md-3 col-xl-2 offset-sm-4 offset-md-0">
+					<custom-pakiet price="299" type="osoba towarzysząca"></custom-pakiet>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="gap w-100"></div>
+	
+	<footer class="container-fluid d-flex flex-column align-items-center position-relative pb-4 fs-6">
+		<img src="logo.png" alt="logo" class="img position-absolute top-0 start-0">
+		<table>
+			<tr>
+				<th>
+					<td>
+						<div class="h2 text-uppercase text-center">organizator</div>
+					</td>
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<img src="icons/adress.png" alt="adress_icon" class="icon">
+				</td>
+				<td >
+					<ul class="list-unstyled text-center my-2">
+						<li><span class="h6 text-uppercase">dane firmowe</span></li>
+						<li>ul. Ławkowa 6</li>
+						<li>61-000 Środa wielkopolska</li>
+						<li>NIP: 7828945709</li>
+						<li>REGON: 381670471</li>
+						<li>KRS: 000000003</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="icons/phone.png" alt="phone_icon" class="icon">
+				</td>
+				<td>
+					<ul class="list-unstyled text-center my-2">
+						<li>tel. +48 000 000 00</li>
+						<li>tel. +48 000 000 00</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="icons/email.png" alt="email_icon" class="icon">
+				</td>
+				<td>
+					<ul class="list-unstyled text-center my-2">
+						<li>e-mail: biuro@wyimaginowanykongres.pl</li>
+						<li>wyimaginowanykongres.pl</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<ul class="list-unstyled text-center my-2">
+						<li>Polityka prywatności</li>
+						<li>Regulamin serwisu</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</footer>
+
+		
+	<script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+$bonus-color: #817abf;
+$custom-gray: #8c8c8c;
+$custom-lighter-gray: #f8f0f0;
+$secondary-color: #1f148c;
+$lighter-secondary-color: #3a2bc6;
+
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	counter-reset: pakiet_num 0;
+	
+	.text-bonus-color{
+		color: $bonus-color;
+	}
+	.text-justify{
+		text-align: justify;
+	}
+	.gap{
+		height: 12vw;
+	}
+
+	.nav{
+		// max-height: 100vh;
+		// overflow: auto;
+		background-color: $secondary-color;
+
+		&:hover{
+			
+			.nav-link{
+				display: flex;
+			}
+		}
+
+		.nav-link{
+
+			min-width: 300px;
+			height: 50px;
+			display: none;
+		}
+		.nav-item:hover{
+			.nav-icon{
+				filter:hue-rotate(80deg);
+			}
+			.nav-link{
+				background-color: $lighter-secondary-color;
+				cursor: pointer;
+			}
+		}
+	}
+
+
+	.cennik-content{
+		background-color: $bonus-color;
+
+		.h1, .h2{
+			color: $secondary-color;
+		}
+		.card{
+			max-width: 50vw;
+			aspect-ratio: 1/1.4;
+		}
+		.pakiet-num::after{
+			counter-increment: pakiet_num;
+			content: " " counter(pakiet_num);
+		}
+
+		custom-pakiet:hover{
+			cursor: default;
+			transition: transform .2s linear, background-color .5s linear;
+			background-color: $custom-lighter-gray;
+			transform: scale(1.1);
+			z-index: 2;
+
+			.btn:hover{
+				transition: transform .15s linear, background-color .3s linear;
+				transform: scale(1.05);
+				background-color: $secondary-color;
+				position: relative;
+				color: white;
+			}
+		}
+	}
+
+	footer{
+		background-image: url("background_2.png");
+		background-size: 100% 100%;
+
+		.h2{
+			color: $secondary-color;
+		}
+		.icon{
+			width: 50%;
+		}
+		img{
+			width: 20vw;
+		}
+	}
+
+	.rej-btn{
+		top:1%;
+		right: 1%;
+		transition: background-color .3s linear;
+
+		&:hover{
+			background-color: $custom-lighter-gray;
+			color: black !important;
+			font-weight: 500;
+		}
+	}
+}
+// @keyframes pulse {
+// 	0%{
+// 		transform: scale(1);
+// 		opacity: .7;
+// 	}
+// 	100%{
+// 		transform: scaleX(1.1) scaleY(1.5);
+// 		opacity: .5;
+// 	}
+// }

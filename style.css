@@ -1,0 +1,84 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  counter-reset: pakiet_num 0;
+}
+body .text-bonus-color {
+  color: #817abf;
+}
+body .text-justify {
+  text-align: justify;
+}
+body .gap {
+  height: 12vw;
+}
+body .nav {
+  background-color: #1f148c;
+}
+body .nav:hover .nav-link {
+  display: flex;
+}
+body .nav .nav-link {
+  min-width: 300px;
+  height: 50px;
+  display: none;
+}
+body .nav .nav-item:hover .nav-icon {
+  filter: hue-rotate(80deg);
+}
+body .nav .nav-item:hover .nav-link {
+  background-color: #3a2bc6;
+  cursor: pointer;
+}
+body .cennik-content {
+  background-color: #817abf;
+}
+body .cennik-content .h1, body .cennik-content .h2 {
+  color: #1f148c;
+}
+body .cennik-content .card {
+  max-width: 50vw;
+  aspect-ratio: 1/1.4;
+}
+body .cennik-content .pakiet-num::after {
+  counter-increment: pakiet_num;
+  content: " " counter(pakiet_num);
+}
+body .cennik-content custom-pakiet:hover {
+  cursor: default;
+  transition: transform 0.2s linear, background-color 0.5s linear;
+  background-color: #f8f0f0;
+  transform: scale(1.1);
+  z-index: 2;
+}
+body .cennik-content custom-pakiet:hover .btn:hover {
+  transition: transform 0.15s linear, background-color 0.3s linear;
+  transform: scale(1.05);
+  background-color: #1f148c;
+  position: relative;
+  color: white;
+}
+body footer {
+  background-image: url("background_2.png");
+  background-size: 100% 100%;
+}
+body footer .h2 {
+  color: #1f148c;
+}
+body footer .icon {
+  width: 50%;
+}
+body footer img {
+  width: 20vw;
+}
+body .rej-btn {
+  top: 1%;
+  right: 1%;
+  transition: background-color 0.3s linear;
+}
+body .rej-btn:hover {
+  background-color: #f8f0f0;
+  color: black !important;
+  font-weight: 500;
+}
